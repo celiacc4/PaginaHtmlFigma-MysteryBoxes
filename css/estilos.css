@@ -1,0 +1,730 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+/* ------------------------------
+   ESTILOS GENERALES
+------------------------------ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #fff4c9;
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+
+h1,
+h2 {
+    color: #1556c0;
+    font-family: 'Merriweather', serif;
+}
+
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+h3 {
+    margin-bottom: 12px;
+}
+
+
+p {
+    line-height: 1.6;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ------------------------------
+   CABECERA
+------------------------------ */
+
+.cabecera {
+    background-color: #315bb0;
+    color: white;
+
+    height: 65px;
+}
+
+
+.navegacion {
+    width: 95%;
+    max-width: 1100px;
+
+    height: 65px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* Icono de inicio */
+
+.inicio {
+    display: flex;
+    align-items: center;
+
+    margin-right: 20px;
+}
+
+
+.inicio img {
+    width: 70px;
+    height: 70px;
+
+    object-fit: contain;
+}
+
+
+/* Enlaces del menú */
+
+.enlaces {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.enlaces a {
+    color: #fff4b5;
+
+    font-family: 'Merriweather', serif;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+.enlaces a:hover {
+    color: white;
+}
+
+
+/* Iconos de la derecha */
+
+.iconos {
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    margin-left: auto;
+}
+
+
+.iconos a {
+    display: flex;
+    align-items: center;
+}
+
+
+.iconos img {
+    width: 70px;
+    height: 70px;
+
+    object-fit: contain;
+}
+
+
+/* ------------------------------
+   BOTONES
+------------------------------ */
+
+.boton {
+    display: inline-block;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 12px 25px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.amarillo {
+    background-color: #ffd82e;
+    color: #222;
+}
+
+
+.azul {
+    background-color: #315bb0;
+    color: white;
+}
+
+
+.rojo {
+    background-color: #e83222;
+    color: white;
+}
+
+
+.boton:hover {
+    opacity: 0.85;
+}
+
+
+/* ------------------------------
+   INICIO
+------------------------------ */
+
+.presentacion,
+.segunda-vida,
+.que-es,
+.vida,
+.contacto {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: auto;
+
+    text-align: center;
+
+    padding: 45px 20px;
+}
+
+
+.presentacion p {
+    max-width: 700px;
+    margin: 8px auto;
+}
+
+
+.segunda-vida h3 {
+    margin-bottom: 15px;
+}
+
+
+.imagen-principal {
+    position: relative;
+
+    max-width: 850px;
+    margin: 30px auto 0;
+}
+
+
+.imagen-principal img {
+    width: 100%;
+
+    display: block;
+}
+
+
+.botones-imagen {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/* ------------------------------
+   PASOS
+------------------------------ */
+
+.pasos {
+    display: flex;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 30px;
+}
+
+
+.paso {
+    flex: 1;
+
+    background-color: white;
+
+    border: 1px solid #315bb0;
+    border-radius: 6px;
+
+    padding: 20px 10px;
+
+    min-height: 150px;
+}
+
+
+.numero {
+    display: block;
+
+    color: #315bb0;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+.paso p {
+    font-size: 11px;
+}
+
+
+/* Iconos de los pasos */
+
+.icono-paso {
+    display: block;
+
+    width: 50px;
+    height: 50px;
+
+    object-fit: contain;
+
+    margin: 15px auto;
+}
+
+
+/* ------------------------------
+   SEGUNDA VIDA
+------------------------------ */
+
+.beneficios {
+    display: flex;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 30px;
+}
+
+
+.beneficios article {
+    background-color: white;
+
+    border: 1px solid #7bb64b;
+    border-radius: 8px;
+
+    width: 30%;
+
+    padding: 20px;
+}
+
+
+.beneficios h3 {
+    color: #333;
+}
+
+
+.beneficios p {
+    font-size: 11px;
+}
+
+
+/* Iconos de segunda vida */
+
+.icono-beneficio {
+    display: block;
+
+    width: 50px;
+    height: 50px;
+
+    object-fit: contain;
+
+    margin: 15px auto;
+}
+
+
+/* ------------------------------
+   FORMULARIO
+------------------------------ */
+
+.formulario {
+    max-width: 600px;
+
+    margin: auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+}
+
+
+.campo {
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+
+    margin-bottom: 20px;
+}
+
+
+.campo label {
+    font-weight: 600;
+
+    margin-bottom: 7px;
+}
+
+
+.campo input,
+.campo textarea {
+    font-family: 'Montserrat', sans-serif;
+
+    padding: 10px;
+
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+
+.formulario .boton {
+    width: 100%;
+}
+
+
+/* ------------------------------
+   PRODUCTOS
+------------------------------ */
+
+.productos {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 40px 0;
+
+    text-align: center;
+}
+
+
+.buscador {
+    margin-bottom: 20px;
+}
+
+
+.buscador input {
+    width: 70%;
+    max-width: 500px;
+
+    padding: 10px 15px;
+
+    border: none;
+    border-radius: 20px;
+
+    background-color: white;
+}
+
+
+.categorias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+}
+
+
+.categorias button {
+    background-color: white;
+
+    border: none;
+    border-radius: 15px;
+
+    padding: 7px 13px;
+
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+
+/* ------------------------------
+   TARJETAS PRODUCTOS
+------------------------------ */
+
+.lista-productos {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+
+.producto {
+    background-color: white;
+
+    border-radius: 7px;
+
+    padding: 10px;
+
+    width: 180px;
+
+    text-align: left;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+
+.producto img {
+    width: 100%;
+    height: 120px;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin-bottom: 10px;
+}
+
+
+.producto h3 {
+    font-size: 12px;
+}
+
+
+.producto p {
+    font-size: 10px;
+
+    color: #666;
+}
+
+
+.producto strong {
+    color: #e83222;
+
+    font-size: 12px;
+}
+
+
+/* ------------------------------
+   DETALLE
+------------------------------ */
+
+.detalle {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 50px 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 50px;
+}
+
+
+.producto-imagen {
+    flex: 1;
+
+    background-color: white;
+
+    padding: 15px;
+
+    border-radius: 10px;
+}
+
+
+.producto-imagen img {
+    width: 100%;
+
+    display: block;
+}
+
+
+.producto-info {
+    flex: 1;
+}
+
+
+.categoria-producto {
+    font-size: 11px;
+
+    color: #666;
+}
+
+
+.producto-info h1 {
+    margin: 5px 0;
+}
+
+
+.precio {
+    display: block;
+
+    color: #e83222;
+
+    font-size: 20px;
+
+    margin-bottom: 20px;
+}
+
+
+.producto-info ul {
+    margin: 20px 0;
+
+    padding-left: 20px;
+}
+
+
+.producto-info li {
+    margin-bottom: 8px;
+}
+
+
+.cantidad {
+    margin-bottom: 20px;
+}
+
+
+.cantidad input {
+    width: 50px;
+
+    padding: 7px;
+}
+
+
+.acciones {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+/* ------------------------------
+   RELACIONADOS
+------------------------------ */
+
+.relacionados {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 30px 0 60px;
+
+    text-align: center;
+}
+
+
+.lista-relacionados {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+
+/* ------------------------------
+   PIE
+------------------------------ */
+
+.pie {
+    background-color: #315bb0;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 15px;
+
+    font-size: 10px;
+}
+
+
+/* ------------------------------
+   RESPONSIVE
+------------------------------ */
+
+@media (max-width: 700px) {
+
+    .navegacion {
+        flex-direction: column;
+
+        gap: 15px;
+
+        height: auto;
+
+        padding: 15px 0;
+    }
+
+
+    .cabecera {
+        height: auto;
+    }
+
+
+    .pasos,
+    .beneficios,
+    .detalle {
+        flex-direction: column;
+    }
+
+
+    .beneficios article {
+        width: 100%;
+    }
+
+
+    .producto {
+        width: 45%;
+    }
+
+
+    .detalle {
+        gap: 25px;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .producto {
+        width: 100%;
+    }
+
+
+    .enlaces {
+        gap: 10px;
+    }
+
+}
